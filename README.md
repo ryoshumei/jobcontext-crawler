@@ -34,12 +34,12 @@ User-Agent に `jobcontext-study` を含むアクセスについての説明で�
   Disallow: /
   ```
 
-- 求人の掲載停止や削除のご依頼は、このリポジトリの Issue でお知らせください。jobContext での表示を止め、「企業のご依頼により非表示」と記録します。
+- 求人の掲載停止や削除のご依頼は、[お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLScM4FLqRFKj7jgp7uOGodR2xHrExO5YKKJGMgsX5k_vVEhrTQ/viewform)（ログイン不要）か、このリポジトリの Issue でお知らせください。jobContext での表示を止め、「企業のご依頼により非表示」と記録します。
 - アクセスを拒否された場合、それを回避して取得しようとはしません。
 
 ## 連絡先
 
-このリポジトリの [Issue](https://github.com/ryoshumei/jobcontext-crawler/issues) へどうぞ。日本語・英語どちらでも構いません。
+[お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLScM4FLqRFKj7jgp7uOGodR2xHrExO5YKKJGMgsX5k_vVEhrTQ/viewform)（Google フォーム、ログイン不要）か、このリポジトリの [Issue](https://github.com/ryoshumei/jobcontext-crawler/issues) へどうぞ。日本語・英語どちらでも構いません。
 
 ---
 
@@ -55,5 +55,5 @@ User-Agent に `jobcontext-study` を含むアクセスについての説明で�
   - It honours Retry-After, and stops visiting a host that keeps refusing it (403/429).
   - No logins, no form submissions, no CAPTCHA or WAF circumvention.
 - **What it stores:** posting text and fields, the URL and the fetch date. Contact details (e-mail addresses, phone numbers) are removed before storage. No personal data about individuals.
-- **To opt out:** add `User-agent: jobcontext-study` / `Disallow: /` to robots.txt. To have postings removed, open an issue here.
-- **Contact:** [issues of this repository](https://github.com/ryoshumei/jobcontext-crawler/issues).
+- **To opt out:** add `User-agent: jobcontext-study` / `Disallow: /` to robots.txt. To have postings removed, use the [contact form](https://docs.google.com/forms/d/e/1FAIpQLScM4FLqRFKj7jgp7uOGodR2xHrExO5YKKJGMgsX5k_vVEhrTQ/viewform) (no sign-in needed) or open an issue here.
+- **Contact:** the [contact form](https://docs.google.com/forms/d/e/1FAIpQLScM4FLqRFKj7jgp7uOGodR2xHrExO5YKKJGMgsX5k_vVEhrTQ/viewform) (Google Forms, no sign-in needed) or the [issues of this repository](https://github.com/ryoshumei/jobcontext-crawler/issues).
