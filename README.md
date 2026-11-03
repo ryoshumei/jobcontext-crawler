@@ -32,7 +32,7 @@ User-Agent に `jobcontext-study` を含むアクセスについての説明で�
 ## アクセスの仕方
 
 - User-Agent：`jobcontext-study/0.1 (+https://github.com/ryoshumei/jobcontext-crawler)`
-- 現在の送信元 IP：`35.200.3.59`（Google Cloud 東京リージョン）
+- 現在の送信元 IP：`35.200.3.59`（Google Cloud 東京リージョン）。jobcontext-study を名乗っていても、ほかの IP からのアクセスは jobContext のものではありません。
 - robots.txt に従います。`User-agent: jobcontext-study` のグループがあればそれに、なければ `User-agent: *` のグループに従います（RFC 9309）。
 - robots.txt が読めないときは、そのサイトから何も取得しません。robots.txt がないときは、制限がないものとして扱います。
 - 同じサイトや採用管理システムへのリクエストは、間隔をあけて行います。robots.txt に Crawl-delay があれば、それに従います。
@@ -79,7 +79,7 @@ User-Agent に `jobcontext-study` を含むアクセスについての説明で�
 `jobcontext-study` is the crawler of jobContext, a public beta service run by an individual. It helps job seekers find and compare, through their AI assistants, the openings that companies in Japan publish on their own career sites and applicant tracking systems. The postings jobContext shows carry a link to the original page and the day that page was last read. Terms and privacy policy: <https://github.com/ryoshumei/jobcontext-crawler/blob/main/TERMS.md>.
 
 - **User-Agent:** `jobcontext-study/0.1 (+https://github.com/ryoshumei/jobcontext-crawler)`
-- **Current source IP:** `35.200.3.59` (Google Cloud, Tokyo).
+- **Current source IP:** `35.200.3.59` (Google Cloud, Tokyo). A request from any other address is not from jobContext, even when it calls itself `jobcontext-study`.
 - **How often:** it reads each company's careers pages again from time to time to keep the postings current, with no fixed interval. It reads careers pages and the job information that applicant tracking systems make publicly available (the kind that needs no login or key).
 - **Rules:**
   - It obeys robots.txt: the group for `jobcontext-study`, or the `*` group when there is none (RFC 9309). If robots.txt cannot be read, it fetches nothing from the site; a missing robots.txt means no rules.
